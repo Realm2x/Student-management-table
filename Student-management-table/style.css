@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: #0f0c22;
+}
+
+.container {
+  width: 800px;
+  padding: 0 15px;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-form {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.form-control {
+  width: calc((100% - 10px) / 2)
+}
+
+.form-control:not(:nth-child(2n)) {
+  margin-right: 5px;;
+}
+
+.visible-hidden {
+  display: none;
+}
+
+.wrong-text {
+  position: absolute;
+  bottom: 4%;
+  left: 23%;
+  color: red;
+}
